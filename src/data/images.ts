@@ -1,0 +1,33 @@
+/**
+ * Semua gambar diambil dari folder lokal public/images.
+ * Ganti nama berkas di bawah sesuai nama foto Anda, termasuk ekstensinya.
+ */
+const img = (file: string) => `/images/${file}`
+
+export const IMG = {
+  hero: img('hero.jpg'),
+  building: img('building.jpg'),
+  aboutStaff: img('aboutStaff.jpg'), // tidak dipakai di halaman mana pun, boleh dihapus
+  consult: img('consult.jpg'),
+  poli: img('poli.jpg'),
+  inpatient: img('inpatient.jpg'),
+  igd: img('igd.jpg'),
+  radiology: img('radiology.jpg'),
+  lab: img('lab.jpg'),
+  pharmacy: img('pharmacy.jpg'),
+  icu: img('icu.jpg'),
+  vip: img('vip.jpg'),
+  or: img('or.jpg'),
+  ambulance: img('ambulance.jpg'),
+  doctorM1: img('doctorM1.jpg'),
+  doctorF1: img('doctorF1.jpg'),
+  doctorM2: img('doctorM2.jpg'),
+  doctorF2: img('doctorF2.jpg'),
+  doctorM3: img('doctorM3.jpg'),
+  doctorF3: img('doctorF3.jpg'),
+  heart: img('heart.jpg'),
+  kids: img('kids.jpg'),
+  food: img('food.jpg'),
+  elderly: img('elderly.jpg'),
+  run: img('run.jpg'),
+}
