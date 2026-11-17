@@ -1,13 +1,9 @@
-/**
- * Semua gambar diambil dari folder lokal public/images.
- * Ganti nama berkas di bawah sesuai nama foto Anda, termasuk ekstensinya.
- */
 const img = (file: string) => `/images/${file}`
 
 export const IMG = {
   hero: img('hero.jpg'),
   building: img('building.jpg'),
-  aboutStaff: img('aboutStaff.jpg'), // tidak dipakai di halaman mana pun, boleh dihapus
+  aboutStaff: img('aboutStaff.jpg'),
   consult: img('consult.jpg'),
   poli: img('poli.jpg'),
   inpatient: img('inpatient.jpg'),

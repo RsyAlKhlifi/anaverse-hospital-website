@@ -1,112 +1,108 @@
-# Rumah Sakit ANAVERSE — Website & Platform Kesehatan Digital
+# ANAVERSE Hospital Website & Digital Healthcare Platform
 
-Platform website rumah sakit digital yang dirancang untuk menyediakan informasi kesehatan dan meningkatkan pengalaman digital pasien.
+ANAVERSE is a hospital website and digital healthcare platform prototype designed to provide accessible healthcare information and improve the digital patient experience.
 
-**Status: Prototipe frontend.** Supabase belum dikonfigurasi. Seluruh data akun, janji temu, konsultasi, dan konten menggunakan data demo yang disimpan di `localStorage` browser. Tidak ada email, pembayaran, atau transaksi nyata.
+## Project Status
+
+**Current Status: Frontend Prototype**
+
+This project currently uses `localStorage` to simulate data storage and user interactions. Supabase integration is planned but has not yet been fully configured.
+
+No real appointments, payments, email notifications, or medical transactions are processed.
 
 ## Tech Stack
 
-- React + TypeScript
-- Vite
-- Tailwind CSS
-- Lucide React
-- Framer Motion
-- React Router
-- Supabase (rencana integrasi backend dan database)
+- **Frontend:** React, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Animations:** Framer Motion
+- **Routing:** React Router
+- **Database Integration (Planned):** Supabase
 
-## Menjalankan Project
+## Features
 
-```bash
-npm install
-npm run dev
-```
+- **Public Website:** Hospital information, services, doctors, and healthcare content.
+- **Authentication:** Demo login and registration interfaces.
+- **Patient Portal:** Patient dashboard and appointment management prototype.
+- **Doctor Portal:** Doctor dashboard and consultation management prototype.
+- **Admin Dashboard:** Content management system prototype.
 
-Buka `http://localhost:5173`.
+## Getting Started
 
-Untuk build produksi:
+### Prerequisites
 
-```bash
-npm run build
-```
+- Node.js
+- npm
 
-## Akun Demo
+### Installation
 
-Semua akun demo menggunakan kata sandi: `Demo12345`.
+1. Clone the repository:
 
-| Peran | Email |
-|---|---|
-| Pasien | pasien@anaverse.id |
-| Dokter | dokter@anaverse.id |
-| Admin | admin@anaverse.id |
+   ```bash
+   git clone https://github.com/RsyAlKhlifi/anaverse-hospital-website.git
+   ```
 
-Buka dua tab (pasien dan dokter) untuk melihat chat konsultasi tersinkron antar-tab.
+2. Navigate to the project directory:
 
-## Fitur Utama
+   ```bash
+   cd anaverse-hospital-website
+   ```
 
-### 1. Website Publik
-- Beranda dengan informasi rumah sakit.
-- Informasi layanan dan fasilitas.
-- Daftar dan profil dokter.
-- Artikel kesehatan.
-- FAQ dan formulir kontak.
+3. Install dependencies:
 
-### 2. Autentikasi
-- Registrasi dan login.
-- Logout.
-- Lupa dan reset kata sandi.
-- Akses berdasarkan peran pasien, dokter, dan admin.
+   ```bash
+   npm install
+   ```
 
-### 3. Portal Pasien
-- Dashboard pasien.
-- Konsultasi online.
-- Pembuatan janji temu offline.
-- Riwayat janji temu dan konsultasi.
-- Profil dan pengaturan akun.
+4. Start the development server:
 
-### 4. Portal Dokter
-- Agenda praktik.
-- Menerima atau menolak permintaan konsultasi.
-- Mengelola sesi konsultasi.
-- Mengelola jadwal praktik.
-- Daftar dan riwayat pasien.
+   ```bash
+   npm run dev
+   ```
 
-### 5. Dashboard Admin
-- Ringkasan aktivitas.
-- Manajemen dokter dan pasien.
-- Manajemen janji temu.
-- Pengelolaan layanan, fasilitas, artikel, testimoni, dan FAQ.
-- Laporan administrasi.
+5. Build the project:
 
-## Struktur Project
+   ```bash
+   npm run build
+   ```
+
+## Demo Accounts
+
+The following accounts are available for testing the prototype:
+
+| Role | Email | Password |
+|---|---|---|
+| Patient | pasien@anaverse.id | Demo12345 |
+| Doctor | dokter@anaverse.id | Demo12345 |
+| Admin | admin@anaverse.id | Demo12345 |
+
+## Project Structure
 
 ```text
-src/
-├── lib/
-├── data/
-├── components/
-├── pages/
-└── services/
-
-supabase/
-└── schema.sql
+anaverse-hospital-website/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── lib/
+│   ├── pages/
+│   └── services/
+├── supabase/
+│   └── schema.sql
+├── .env.example
+├── index.html
+├── package.json
+└── vite.config.ts
 ```
 
-## Rencana Integrasi Supabase
+## Planned Improvements
 
-1. Membuat project Supabase dan menjalankan `supabase/schema.sql`.
-2. Mengonfigurasi environment variables melalui `.env`.
-3. Mengintegrasikan Supabase Auth dan database.
-4. Mengimplementasikan Realtime untuk konsultasi.
-5. Mengamankan role pengguna dan kebijakan Row Level Security (RLS).
-
-## Catatan
-
-- Project saat ini merupakan prototipe untuk demonstrasi dan portofolio.
-- Password demo disimpan di `localStorage` dan tidak ditujukan untuk penggunaan produksi.
-- Foto menggunakan Unsplash melalui hotlink.
-- Informasi rumah sakit, statistik, kontak, dan akun media sosial merupakan data contoh.
-- Konsultasi video belum diimplementasikan; baru tersedia struktur integrasinya.
+- Complete Supabase database integration.
+- Implement secure authentication and role-based access control.
+- Connect appointment management to a real database.
+- Implement real-time updates.
+- Develop the video consultation feature.
 
 ## Disclaimer
 
-ANAVERSE merupakan proyek demonstrasi dan portofolio pribadi, bukan platform layanan kesehatan operasional. Seluruh akun dan data yang tersedia hanya untuk keperluan simulasi.
+ANAVERSE is a portfolio and educational prototype. It is not an operational healthcare service and should not be used for real medical appointments or transactions.
