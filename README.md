@@ -105,4 +105,4 @@ anaverse-hospital-website/
 
 ## Disclaimer
 
-ANAVERSE is a portfolio and educational prototype. It is not an operational healthcare service and should not be used for real medical appointments or transactions.
+ANAVERSE is just a portfolio and educational prototype. It is not an operational healthcare service and should not be used for real medical appointments or transactions.
